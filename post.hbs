@@ -43,6 +43,11 @@
         </header>
 
         <div class="gh-content gh-canvas">
+            {{#if access}}
+                <iframe allowfullscreen="false" data-src="https://app.beyondwords.io/api/v2/projects/12529/podcasts/iframe.html" frameborder="0" id="speechkit-io-iframe" scrolling="no" style="display: none"></iframe>
+                <script src="https://proxy.beyondwords.io/npm/@beyondwords/audio-player@latest/dist/module/iframe-helper.js" type="text/javascript"></script>
+            {{/if}}
+        
             {{content}}
         </div>
 
